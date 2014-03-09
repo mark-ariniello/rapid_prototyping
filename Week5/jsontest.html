@@ -1,0 +1,30 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+          "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css" />
+    <title>JSON</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <h1>Part Information</h1>
+    <p>
+        serial#: <span id="serialj"></span></br>
+        Part: <span id="partj"></span></br>
+        mannual: <span id="mannualj"></span></br>
+    </p>
+    <script>
+        var JSONObject = {
+            "serial": "8265332",
+            "Part": "magnetic flux Coil",
+            "mannual": "Scotty's guide to starsphip components section C"
+        };
+        document.getElementById("serialj").innerHTML=JSONObject.serial;
+        document.getElementById("partj").innerHTML=JSONObject.part;
+        document.getElementById("mannualj").innerHTML = JSONObject.mannual;
+        var obj = jQuery.parseJSON(JSONObject);
+        obj.serial("font-color"="orange")
+    </script>
+</body>
+</html>

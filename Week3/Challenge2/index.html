@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form class="form-horizontal" role="form">
+            <div class="form-group has-success">
+                <label for="AboutUser">About Me:</label>
+                <textarea class="form-control input-lg" rows="3" placeholder="About(descripiton of you)" id="AboutUser"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="Gender">Gender:</label></br>
+                <input type="radio" name="Gender" value="male" />Male</br>
+                <input type="radio" name="Gender" value="female" />Female
+            </div>
+            <div class="form-group">
+                <label for="">Select Age Group:</label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="AgeGroup" id="inlinecheckbox1" value="option1" /> 0-17
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="AgeGroup" id="inlinecheckbox2" value="opiton2" />18-24
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="AgeGroup" id="inlinecheckbox3" value="option3" />25-death
+                </label>
+            </div>
+            <div class="form-group  has-warning">
+                <label for="InputPassword">Password:</label>
+                <input type="password" class="form-control input-sm" id="InputPassword" placeholder="Password">
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <button type="button" class="btn btn-default">Check</button>
+                    <button type="button" class="btn btn-primary" disabled="disabled">Edit</button>
+                    <button type="button" class="btn btn-success" disabled="disabled">Submit</button>
+                    <span class="help-block">Hit the white button above to see if your password has already been taken. The blue Button to edit any information. And the green button for success</span>
+                </div>
+
+        </form>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

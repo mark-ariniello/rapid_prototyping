@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+  <head>
+    <title>Mark Ariniello</title> 
+      <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  </head>
+  <body>
+    <table border=1px>
+      <tr>
+        <td>
+	  <p> My Name is Mark Ariniello </p>
+	</td>
+        <td>
+	  <p> Link: </p>
+	  <p> My favoirte website is:
+	  <a href="http://www.mountainbuzz.com/"> mountainbuzz </a> </p>
+	</td>
+        <td>
+	  <p> This is a photo of my favorite place: </p>
+          <script>$(document).ready(function () {
+            $("img").click(function () {
+              $("img").hide();
+          });
+        });
+        </script>
+	  <img src="http://render.fineartamerica.com/images/images-stretched-canvas-search/15.00/15.00/black/break/images-medium-5/4-salida-colorado-john-wark.jpg"/>
+	  <p>Salida, CO</p>
+	</td>
+      </tr>
+      <tr>
+        <td>
+	  <p> This is a nested table </p>
+	  <table border=1px>
+	    <tr>
+	      <td style="background-color:orange; height:20px; width:50px"></td>
+	      <td style="background-color:yellow; height:20px; width:50px"></td>
+	    </tr>
+	  </table>
+	</td>
+	<td>
+	  <p>favorite editors:</p>
+  	  <ul>
+	    <li>geaney</li>
+	    <li>emacs</li>
+	    <li>Visual Studio</li>
+	  </ul>
+	</td>
+	<td>
+	  <p>These are my Favorite programming Languages:</p>
+	  <ol>
+	    <li>c++</li>
+	    <li>java</li>
+	    <li>Ruby</li>
+	  </ol>
+	</td>
+      </tr>
+    </table>
+  </body>
+</html>

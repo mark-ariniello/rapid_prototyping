@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Robo Dating</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#">My Profile</a></li>
+                    <li><a href="#">Browse Members</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <form class="navbar-form navbar-left" role="search">
+                        <button type="search" class="btn btn-default">Search</button>
+                        <button type="signin" class="btn btn-default">Sigh In</button>
+                    </form>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+       <h1 style="text-align:center">BitMatch.com</h1>
+       <h1>Search</h1>
+        <form class="form-horizontal" role="form">
+            <div class="row">
+                    <div class="form-grougp">
+                        <label for="">Select Perferred Metal(s):</label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="Metal" id="inlinecheckbox1" value="Titanium" /> Titanium
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="Metal" id="inlinecheckbox2" value="Steel" /> Steel
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="Metal" id="inlinecheckbox3" value="Copper" /> Copper
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="Metal" id="inlinecheckbox4" value="Aluminium" /> Aluminium
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="Metal" id="inlinecheckbox5" value="Carbotanium" /> Carbotanium
+                        </label>
+                    </div>
+                </div>
+            <div class="row"></div>
+            <div class="row">
+                <div class="col-md-4">
+                <div class="form-group">
+                    <label for="OS">Operating System:</label></br>
+                    <input type="radio" name="OS" value="Windows" />Windows</br>
+                    <input type="radio" name="OS" value="MacOS" />MacOS</br>
+                    <input type="radio" name="OS" value="Linux" />Linux</br>
+                    <input type="radio" name="OS" value="Unix" />Unix</br>
+                    <input type="radio" name="OS" value="DOS" />DOS</br>
+                    <input type="radio" name="OS" value="ChromeOS" />ChromeOS
+                </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group has-success">
+                        <label for="Keywords">KeyWords:</label>
+                        <textarea class="form-control input-lg" rows="3" placeholder="Keywords(seperated by ,)" id="Keywords"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <button type="button" class="btn btn-success">Search</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script>
+
+        $('#myModal').modal(options)
+
+    </script>
+</body>
+</html>

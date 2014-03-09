@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <title>Week 2</title> 
+      <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  </head>
+  <body>
+    <p> Click on the botton below to change the background color to orange </p>
+      <input type="button" name="bgchange" id="1" value="here">
+      <script>
+$(document).ready(function () {
+    $("#1").click(function () {
+        $("body").css("background-color", "red");
+    });
+});
+      </script>
+
+    <p>To make everything illegible click below</p>
+      <input type="button" name="ffchange" id="2" value="here">
+      <script>$(document).ready(function () {
+                $("#2").click(function () {
+                   $("body").css("font-family", "symbol");
+               });
+             });
+      </script>
+    <p>To make everything big click below</p>
+      <input type="button" name="fschange" id="3" value="here">
+      <script>$(document).ready(function () {
+                $("#3").click(function () {
+                  $("body").css("font-size", "50px");
+          });
+        });
+      </script>
+      <form>
+          <input type="checkbox" name="ALL" id="4" value="All"> check all<br>
+          <input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+          <input type="checkbox" name="vehicle" value="Car">I have a car
+          <script>$('#4').click(function (event) {
+    if (this.checked) {
+        $(':checkbox').each(function () {
+            this.checked = true;
+        });
+    }
+});
+        </script>
+      </form>
+  </body>
+</html>
